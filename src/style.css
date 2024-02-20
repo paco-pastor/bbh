@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background: rgb(219,186,17);
+  background: linear-gradient(38deg, rgba(219,186,17,1) 0%, rgba(218,17,119,1) 100%);
+}

@@ -23,7 +23,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  background: rgb(219, 186, 17);
   background: linear-gradient(
     38deg,
     rgba(219, 186, 17, 1) 0%,
@@ -33,7 +32,7 @@ body {
 
 input {
   background-color: rgba(0, 0, 0, 0);
-  border-radius:100px;
+  border-radius: 100px;
   height: 50px;
   width: 500px;
   font-size: 45px;
@@ -45,4 +44,15 @@ input {
 
 input:focus {
   outline: none;
+}
+
+button.submit {
+  border-radius: 15px;
+  border-style: solid;
+  border-color: white;
+  margin-top: 50px;
+  height: 50px;
+  width: 150px;
+  font-weight: bold;
+  font-size: 20px;
 }

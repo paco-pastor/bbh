@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TextField from "./TextField";
 import "./style.css";
+import send from './send.svg'
 
 function Formulaire() {
   const [nom, setNom] = useState("");
@@ -21,12 +22,17 @@ function Formulaire() {
   };
 
   return (
-    <form class="form" onSubmit={handleSubmit}>
-      <React.StrictMode>
-        <TextField />
-      </React.StrictMode>
-      <button type="submit">Soumettre</button>
-    </form>
+    <div align="center">
+      <form class="form" onSubmit={handleSubmit}>
+        <React.StrictMode>
+          <TextField />
+        </React.StrictMode>
+        <img src="{send}" />
+        <button class="submit" type="submit">
+          ENVOYER
+        </button>
+      </form>
+    </div>
   );
 }
 

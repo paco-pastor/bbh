@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import TextField from "./TextField";
 import "./style.css";
-import send from './send.svg'
 
 function Formulaire() {
   const [nom, setNom] = useState("");
@@ -27,10 +26,7 @@ function Formulaire() {
         <React.StrictMode>
           <TextField />
         </React.StrictMode>
-        <img src="{send}" />
-        <button class="submit" type="submit">
-          ENVOYER
-        </button>
+        <img class="submit" alt="ENVOYER" src="./send.svg" tabIndex="0"/>
       </form>
     </div>
   );
